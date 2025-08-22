@@ -9,7 +9,7 @@ A visualization of the self-organized criticality forest fire model using SFML g
  ./main
 
 
-*If you want to make your own changes, you will need to:
+*If you want to make your own changes, you will need to run the following lines into your terminal in order to update the changes:
 
  make clean
 
