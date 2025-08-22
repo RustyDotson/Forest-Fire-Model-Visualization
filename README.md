@@ -5,7 +5,6 @@
 all you need to do is setup the build generator through cmake and then run:
 
 make
-
 ./main
 
 
