@@ -3,10 +3,16 @@
 
 
 all you need to do is setup the build generator through cmake and then run:
+
 make
+
 ./main
 
+
 if you want to make your own changes, you will need to:
+
 make clean
+
 make
+
 ./main
