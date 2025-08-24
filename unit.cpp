@@ -7,7 +7,7 @@ using std::vector, std::cout, std::endl, std::srand, std::time;
 
 Unit::Unit(int status, int col, int row, vector<sf::Color> colors){
     //below line is for square shape:
-    unitShape.setSize(sf::Vector2f(9.f, 9.f));
+    unitShape.setSize(sf::Vector2f(3.f, 3.f));
 
     //below line is for circle shape:
     //unitShape.setRadius(4.f);
@@ -15,7 +15,7 @@ Unit::Unit(int status, int col, int row, vector<sf::Color> colors){
     unitStatus = status;
     unitColumn = col;
     unitRow = row;
-    unitShape.move({unitColumn*9.f, unitRow*9.f});
+    unitShape.move({unitColumn*3.f, unitRow*3.f});
     setColor(colors[1]);
 
 
