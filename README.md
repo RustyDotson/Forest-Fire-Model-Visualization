@@ -16,3 +16,5 @@ A visualization of the self-organized criticality forest fire model using SFML g
  make
 
  ./main
+ 
+![ffm2](https://github.com/user-attachments/assets/511695b5-9957-4631-8775-87909edce27b)
