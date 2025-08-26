@@ -140,7 +140,7 @@ int main()
         locationx = (rand() % grid.unitMatrix.size());
         locationy = (rand() % grid.unitMatrix[0].size());
 
-        grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[0]);
+        //grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[0]);
         
         std::cout << locationx << ", " << locationy << std::endl;
 
