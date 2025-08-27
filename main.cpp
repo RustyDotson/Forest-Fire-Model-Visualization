@@ -11,7 +11,7 @@ colors[0] == a tree,
 [1] == the ground color, 
 and [2] == the color for fire.
 */
-vector<sf::Color> colors = {sf::Color::Green, sf::Color::Black, sf::Color::Red};
+vector<sf::Color> colors = {sf::Color::Green, sf::Color::Black, sf::Color::Red, sf::Color::Yellow};
 
 void drawGrid(sf::RenderWindow& window, Grid grid){
     /*
@@ -94,14 +94,15 @@ void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window){
 
 int main()
 {   
-    //change the two numbers below to change the size of the window being used.
-    sf::RenderWindow window(sf::VideoMode({800, 800}), "Forest Fire Visual Model");
-
-    //change the two number parameters below to change the size of the grid.
-    Grid grid(200, 200, colors);
-
     std::srand(std::time(0));
-    
+    //windowSize determines the size of the window being used.
+    unsigned int windowSize = 800;
+    sf::RenderWindow window(sf::VideoMode({windowSize, windowSize}), "Forest Fire Visual Model");
+
+    //gridSize determines the width and height of the grid.
+    int gridSize = 20;
+    Grid grid(gridSize, gridSize, colors, windowSize);
+
     int locationx = (rand() % grid.unitMatrix.size());
     int locationy = (rand() % grid.unitMatrix[0].size());
 
@@ -110,8 +111,8 @@ int main()
     int lightningSpawnRoll = (rand() % 100);
 
     //the percent change that either a tree or lightning strikes.
-    int treeSpawnChance = 8;
-    int lightningStrikeChance = 2;
+    int treeSpawnChance = 35;
+    int lightningStrikeChance = 3;
 
     while (window.isOpen())
     {  
@@ -135,6 +136,12 @@ int main()
             if (grid.unitMatrix[locationx][locationy].unitShape.getFillColor() == colors[0]){
                 burnTrees(grid, locationx, locationy, window);
             }
+            grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[2]);
+            window.clear();
+            drawGrid(window, grid);
+            window.display();
+            usleep(100);
+            grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[1]);
         }
 
         locationx = (rand() % grid.unitMatrix.size());

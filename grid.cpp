@@ -3,17 +3,18 @@
 using std::cout, std::endl;
 
 
-Grid::Grid(int width, int height, vector<sf::Color> colors){
+Grid::Grid(int width, int height, vector<sf::Color> colors, int windowSize){
     unitMatrix = {};
-    buildMatrix(width, height, colors);
+    buildMatrix(width, height, colors, windowSize);
 }
 
-void Grid::buildMatrix(int width, int height, vector<sf::Color> colors){
+void Grid::buildMatrix(int width, int height, vector<sf::Color> colors, int windowSize){
     vector<Unit> row;
+    float unitSize = windowSize / width;
     for(int wCounter=0; wCounter<width; wCounter++){
         row = vector<Unit> {};
         for(int hCounter=0; hCounter<height; hCounter++){
-            row.push_back(Unit(0, wCounter, hCounter, colors));
+            row.push_back(Unit(0, wCounter, hCounter, colors, unitSize));
         }
         unitMatrix.push_back(row);
     }

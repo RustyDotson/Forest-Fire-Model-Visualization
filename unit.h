@@ -17,7 +17,7 @@ class Unit {
         //use below line if you want a circle:
         //sf::CircleShape unitShape;
 
-        Unit(int status, int col, int row, vector<sf::Color> colors);
+        Unit(int status, int col, int row, vector<sf::Color> colors, float unitSize);
 
         vector<int> getLocation();
 

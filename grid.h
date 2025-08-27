@@ -7,11 +7,11 @@ class Grid{
 
     private:
         
-        void buildMatrix(int width, int height, vector<sf::Color> colors);
+        void buildMatrix(int width, int height, vector<sf::Color> colors, int windowSize);
 
     public:
         vector<vector<Unit>> unitMatrix;
-        Grid(int width, int height, vector<sf::Color> colors);
+        Grid(int width, int height, vector<sf::Color> colors, int windowSize);
         int getHeight();
         int getWidth();
 
