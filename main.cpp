@@ -38,7 +38,6 @@ void drawUnit(sf::RenderWindow& window, Grid grid, int x, int y){
     window.draw(grid.unitMatrix[x][y].unitShape);
 }
 
-
 void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window){
     //performs the breadth-first search burning function on the grid.
     std::queue<std::pair<int, int>> fireQueue;
@@ -116,8 +115,6 @@ int main()
 
     while (window.isOpen())
     {  
-        //usleep(20);
-    
         treeSpawnRoll = (rand() % 100);
         lightningSpawnRoll = (rand() % 100);
 
