@@ -100,7 +100,7 @@ int main()
     sf::RenderWindow window(sf::VideoMode({windowSize, windowSize}), "Forest Fire Visual Model");
 
     //gridSize determines the width and height of the grid.
-    int gridSize = 20;
+    int gridSize = 100;
     Grid grid(gridSize, gridSize, colors, windowSize);
 
     int locationx = (rand() % grid.unitMatrix.size());
@@ -111,8 +111,8 @@ int main()
     int lightningSpawnRoll = (rand() % 100);
 
     //the percent change that either a tree or lightning strikes.
-    int treeSpawnChance = 35;
-    int lightningStrikeChance = 3;
+    int treeSpawnChance = 30;
+    int lightningStrikeChance = 2;
 
     while (window.isOpen())
     {  
