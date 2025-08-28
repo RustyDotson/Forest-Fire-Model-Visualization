@@ -6,6 +6,8 @@ Make is not available by default on Windows. If you feel the need to use Windows
 
 For Linux or Mac users, you have it a bit easier. All you need to do is setup the build generator through the makefile and then run. Be sure to have SFML installed on your computer. You can learn more about how to do this on SFML's website: https://www.sfml-dev.org/.
 
+building is as simple as:
+
  make
 
  ./main
