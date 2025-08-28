@@ -2,16 +2,9 @@
 A visualization of the self-organized criticality forest fire model using SFML graphics in C++
 
 
-*All you need to do is setup the build generator through cmake and then run:
+Make is not available by default on Windows. If you feel the need to use Windows, you can use cmake to help build, but you will need to write the cmakelists file yourself to get this working.
 
- make
-
- ./main
-
-
-*If you want to make your own changes, you will need to run the following lines into your terminal in order to update the changes:
-
- make clean
+For Linux or Mac users, you have it a bit easier. All you need to do is setup the build generator through the makefile and then run. Be sure to have SFML installed on your computer. You can learn more about how to do this on SFML's website: https://www.sfml-dev.org/.
 
  make
 
