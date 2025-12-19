@@ -1,5 +1,5 @@
 # Forest Fire Model Visualization
-A visualization of the self-organized criticality forest fire model using SFML graphics in C++
+A visualization of the [self-organized criticality forest fire model](https://en.wikipedia.org/wiki/Forest-fire_model) using SFML graphics in C++
 
 
 Make is not available by default on Windows. If you feel the need to use Windows, you can use cmake to help build, but you will need to write the cmakelists file yourself to get this working.
