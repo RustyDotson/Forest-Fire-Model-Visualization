@@ -2,11 +2,9 @@
 A visualization of the [self-organized criticality forest fire model](https://en.wikipedia.org/wiki/Forest-fire_model) using SFML graphics in C++
 
 
-Make is not available by default on Windows. If you feel the need to use Windows, you can use cmake to help build, but you will need to write the cmakelists file yourself to get this working.
+The project was built using MacOS, so getting the code to work on Windows or Linux may be difficult. The Makefile in this project was designed for a Mac, so changes will need to be made depending on what os you are using. Windows will not be able to run make files by default. Please look into GNUWin32 or other packages in order to run on Windows. SFML's website: https://www.sfml-dev.org/. I will work on a cmake version of this to make it easier to run.
 
-For Linux or Mac users, you have it a bit easier. All you need to do is setup the build generator through the makefile and then run. Be sure to have SFML installed on your computer in the location designated in the makefile. It's a bit tricky to setup, but you can learn more about how to do this on SFML's website: https://www.sfml-dev.org/.
-
-building is as simple as:
+after getting the MakeFile setup correctly with your os building is as simple as:
 
  make
 
