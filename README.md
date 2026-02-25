@@ -8,6 +8,7 @@ The project was originally built using MacOS without using cmake, instead throug
 building the program by running:
 
 cmake -B build
+
 cmake --build build
 
 should get you something like this (unless I changed the default number of units or colors later):
