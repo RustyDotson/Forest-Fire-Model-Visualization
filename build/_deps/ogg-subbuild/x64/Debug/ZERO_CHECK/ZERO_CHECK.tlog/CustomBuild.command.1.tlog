@@ -1,0 +1,10 @@
+^C:\USERS\RUSTY\DOCUMENTS\PROJECTS\FOREST-FIRE-MODEL-VISUALIZATION\BUILD\_DEPS\OGG-SUBBUILD\CMAKEFILES\9CFB46A892836F27EAE1999CC5063CCD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/ogg-subbuild -BC:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/ogg-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/ogg-subbuild/ogg-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

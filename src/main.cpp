@@ -1,7 +1,10 @@
 #include <SFML/Graphics.hpp>
 #include "grid.h"
 #include <ctime>
-#include <unistd.h>
+#include <queue>
+#include <thread>
+#include <chrono>
+using namespace std;
 
 
 sf::Color brown(150,75,0);
@@ -125,6 +128,9 @@ int main()
             }
             
             grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[0]);
+            window.clear();
+            drawGrid(window, grid);
+            window.display();
         }
 
         if (lightningSpawnRoll < lightningStrikeChance){
@@ -137,7 +143,7 @@ int main()
             window.clear();
             drawGrid(window, grid);
             window.display();
-            usleep(100);
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
             grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[1]);
         }
 
@@ -152,8 +158,6 @@ int main()
                 window.close();
         }
 
-        window.clear();
-        drawGrid(window, grid);
-        window.display();
+        
     }
 }

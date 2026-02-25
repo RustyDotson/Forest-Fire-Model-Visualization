@@ -1,0 +1,10 @@
+^C:\USERS\RUSTY\DOCUMENTS\PROJECTS\FOREST-FIRE-MODEL-VISUALIZATION\BUILD\_DEPS\VORBIS-SUBBUILD\CMAKEFILES\2BBA4BAFD5D77B84396EED4C3C611CA9\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/vorbis-subbuild -BC:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/vorbis-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/vorbis-subbuild/vorbis-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

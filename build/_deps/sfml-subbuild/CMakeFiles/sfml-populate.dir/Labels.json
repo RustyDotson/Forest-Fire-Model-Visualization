@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate"
 		},
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate.rule"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/490a0727b3a4a7794465b387386e6d38/sfml-populate.rule"
 		},
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete.rule"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/366adf05698e420c5796149c03b50bb1/sfml-populate-complete.rule"
 		},
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build.rule"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/46e3ec2fdcef83af8adb55706f39dffa/sfml-populate-build.rule"
 		},
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure.rule"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/46e3ec2fdcef83af8adb55706f39dffa/sfml-populate-configure.rule"
 		},
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download.rule"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/46e3ec2fdcef83af8adb55706f39dffa/sfml-populate-download.rule"
 		},
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install.rule"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/46e3ec2fdcef83af8adb55706f39dffa/sfml-populate-install.rule"
 		},
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir.rule"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/46e3ec2fdcef83af8adb55706f39dffa/sfml-populate-mkdir.rule"
 		},
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch.rule"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/46e3ec2fdcef83af8adb55706f39dffa/sfml-populate-patch.rule"
 		},
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test.rule"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/46e3ec2fdcef83af8adb55706f39dffa/sfml-populate-test.rule"
 		},
 		{
-			"file" : "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update.rule"
+			"file" : "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-subbuild/CMakeFiles/46e3ec2fdcef83af8adb55706f39dffa/sfml-populate-update.rule"
 		}
 	],
 	"target" : 

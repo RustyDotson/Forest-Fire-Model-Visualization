@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\337d698f533424fae313455c1c4158a0\vorbis-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\337d698f533424fae313455c1c4158a0\vorbis-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\337d698f533424fae313455c1c4158a0\vorbis-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\337d698f533424fae313455c1c4158a0\vorbis-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\337d698f533424fae313455c1c4158a0\vorbis-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\337d698f533424fae313455c1c4158a0\vorbis-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\337d698f533424fae313455c1c4158a0\vorbis-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\337d698f533424fae313455c1c4158a0\vorbis-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\1c1ba0981f54a4f4e6e49e4bcbaaa72b\vorbis-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\2bba4bafd5d77b84396eed4c3c611ca9\vorbis-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\vorbis-subbuild\CMakeFiles\vorbis-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CC12C6D2-E13F-3499-B090-0CCCEB7CDFF7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

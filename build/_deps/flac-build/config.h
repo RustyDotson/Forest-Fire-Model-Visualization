@@ -7,7 +7,7 @@
 #define CPU_IS_BIG_ENDIAN 0
 
 /* Target processor ARM64 */
-#define FLAC__CPU_ARM64
+/* #undef FLAC__CPU_ARM64 */
 
 /* Set FLAC__BYTES_PER_WORD to 8 (4 is the default) */
 #define ENABLE_64_BIT_WORDS 1
@@ -23,13 +23,13 @@
 #define FLAC__HAS_OGG OGG_FOUND
 
 /* Set to 1 if <x86intrin.h> is available. */
-#define FLAC__HAS_X86INTRIN 0
+#define FLAC__HAS_X86INTRIN 1
 
 /* Set to 1 if <arm_neon.h> is available. */
-#define FLAC__HAS_NEONINTRIN 1
+#define FLAC__HAS_NEONINTRIN 0
 
 /* Set to 1 if <arm_neon.h> contains A64 intrinsics */
-#define FLAC__HAS_A64NEONINTRIN 1
+#define FLAC__HAS_A64NEONINTRIN 0
 
 /* define if building for Darwin / MacOS X */
 /* #undef FLAC__SYS_DARWIN */
@@ -53,10 +53,10 @@
 #define GIT_COMMIT_TAG "1.4.3"
 
 /* Compiler has the __builtin_bswap16 intrinsic */
-#define HAVE_BSWAP16
+/* #undef HAVE_BSWAP16 */
 
 /* Compiler has the __builtin_bswap32 intrinsic */
-#define HAVE_BSWAP32
+/* #undef HAVE_BSWAP32 */
 
 /* Define to 1 if you have the <byteswap.h> header file. */
 /* #undef HAVE_BYTESWAP_H */
@@ -68,22 +68,22 @@
 /* #undef HAVE_CPUID_H */
 
 /* Define to 1 if fseeko (and presumably ftello) exists and is declared. */
-#define HAVE_FSEEKO
+/* #undef HAVE_FSEEKO */
 
 /* Define to 1 if you have the `getopt_long' function. */
 /* #undef HAVE_GETOPT_LONG */
 
 /* Define if you have the iconv() function and it works. */
-#define HAVE_ICONV
+/* #undef HAVE_ICONV */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H
 
 /* Define if you have <langinfo.h> and nl_langinfo(CODESET). */
-#define HAVE_LANGINFO_CODESET
+/* #undef HAVE_LANGINFO_CODESET */
 
 /* lround support */
-#define HAVE_LROUND 1
+#define HAVE_LROUND 0
 
 /* Define to 1 if you have the <memory.h> header file. */
 /* #undef HAVE_MEMORY_H */
@@ -101,7 +101,7 @@
 /* #undef HAVE_SYS_IOCTL_H */
 
 /* Define to 1 if you have the <sys/param.h> header file. */
-#define HAVE_SYS_PARAM_H
+/* #undef HAVE_SYS_PARAM_H */
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
 /* #undef HAVE_SYS_STAT_H */
@@ -116,7 +116,7 @@
 /* #undef HAVE_TYPEOF */
 
 /* Define to 1 if you have the <unistd.h> header file. */
-#define HAVE_UNISTD_H
+/* #undef HAVE_UNISTD_H */
 
 /* Define to 1 if you have the <x86intrin.h> header file. */
 /* #undef HAVE_X86INTRIN_H */

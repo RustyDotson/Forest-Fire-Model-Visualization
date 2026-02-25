@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...4.0)
+cmake_policy(VERSION 2.8.3...3.29)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -50,14 +50,35 @@ unset(_cmake_expected_targets)
 add_library(Ogg::ogg STATIC IMPORTED)
 
 set_target_properties(Ogg::ogg PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/ogg-src/include;/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/ogg-build/include"
+  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/ogg-src/include;C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/ogg-build/include"
 )
 
-# Import target "Ogg::ogg" for configuration ""
-set_property(TARGET Ogg::ogg APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "Ogg::ogg" for configuration "Debug"
+set_property(TARGET Ogg::ogg APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(Ogg::ogg PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "C"
-  IMPORTED_LOCATION_NOCONFIG "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-build/lib/libogg.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C"
+  IMPORTED_LOCATION_DEBUG "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-build/lib/Debug/oggd.lib"
+  )
+
+# Import target "Ogg::ogg" for configuration "Release"
+set_property(TARGET Ogg::ogg APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(Ogg::ogg PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C"
+  IMPORTED_LOCATION_RELEASE "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-build/lib/Release/ogg.lib"
+  )
+
+# Import target "Ogg::ogg" for configuration "MinSizeRel"
+set_property(TARGET Ogg::ogg APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
+set_target_properties(Ogg::ogg PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "C"
+  IMPORTED_LOCATION_MINSIZEREL "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-build/lib/MinSizeRel/ogg.lib"
+  )
+
+# Import target "Ogg::ogg" for configuration "RelWithDebInfo"
+set_property(TARGET Ogg::ogg APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
+set_target_properties(Ogg::ogg PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "C"
+  IMPORTED_LOCATION_RELWITHDEBINFO "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-build/lib/RelWithDebInfo/ogg.lib"
   )
 
 # This file does not depend on other imported targets which have

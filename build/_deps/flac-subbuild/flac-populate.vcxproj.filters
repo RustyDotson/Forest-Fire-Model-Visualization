@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\75128e60f8bc23c0dd5a5ed17357db3e\flac-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\75128e60f8bc23c0dd5a5ed17357db3e\flac-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\75128e60f8bc23c0dd5a5ed17357db3e\flac-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\75128e60f8bc23c0dd5a5ed17357db3e\flac-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\75128e60f8bc23c0dd5a5ed17357db3e\flac-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\75128e60f8bc23c0dd5a5ed17357db3e\flac-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\75128e60f8bc23c0dd5a5ed17357db3e\flac-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\75128e60f8bc23c0dd5a5ed17357db3e\flac-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\ed0c8e002ef8e0097ea41e3f97973f10\flac-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\a0f1f648a327d7928f6946006bc9124f\flac-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\_deps\flac-subbuild\CMakeFiles\flac-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B6FC8B08-B311-3BCB-ACCF-F9C4047D069A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

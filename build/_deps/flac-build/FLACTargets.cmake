@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...4.0)
+cmake_policy(VERSION 2.8.3...3.29)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -51,15 +51,36 @@ add_library(FLAC::FLAC STATIC IMPORTED)
 
 set_target_properties(FLAC::FLAC PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "\$<\$<NOT:\$<BOOL:OFF>>:FLAC__NO_DLL>"
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/flac-src/include"
-  INTERFACE_LINK_LIBRARIES "\$<\$<BOOL:1>:m>;Ogg::ogg"
+  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/flac-src/include"
+  INTERFACE_LINK_LIBRARIES "\$<\$<BOOL:>:m>;Ogg::ogg"
 )
 
-# Import target "FLAC::FLAC" for configuration ""
-set_property(TARGET FLAC::FLAC APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "FLAC::FLAC" for configuration "Debug"
+set_property(TARGET FLAC::FLAC APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(FLAC::FLAC PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "C"
-  IMPORTED_LOCATION_NOCONFIG "/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/sfml-build/lib/libFLAC.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;RC"
+  IMPORTED_LOCATION_DEBUG "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-build/lib/Debug/FLACd.lib"
+  )
+
+# Import target "FLAC::FLAC" for configuration "Release"
+set_property(TARGET FLAC::FLAC APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(FLAC::FLAC PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C;RC"
+  IMPORTED_LOCATION_RELEASE "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-build/lib/Release/FLAC.lib"
+  )
+
+# Import target "FLAC::FLAC" for configuration "MinSizeRel"
+set_property(TARGET FLAC::FLAC APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
+set_target_properties(FLAC::FLAC PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "C;RC"
+  IMPORTED_LOCATION_MINSIZEREL "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-build/lib/MinSizeRel/FLAC.lib"
+  )
+
+# Import target "FLAC::FLAC" for configuration "RelWithDebInfo"
+set_property(TARGET FLAC::FLAC APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
+set_target_properties(FLAC::FLAC PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "C;RC"
+  IMPORTED_LOCATION_RELWITHDEBINFO "C:/Users/Rusty/Documents/Projects/Forest-Fire-Model-Visualization/build/_deps/sfml-build/lib/RelWithDebInfo/FLAC.lib"
   )
 
 # Make sure the targets which have been exported in some other

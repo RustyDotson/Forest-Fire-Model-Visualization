@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Rusty\Documents\Projects\Forest-Fire-Model-Visualization\build\CMakeFiles\aaac5461ed87a6fd40c9f21b01e2fb83\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B65BE6E3-943C-332C-94DB-48DB78D59381}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
