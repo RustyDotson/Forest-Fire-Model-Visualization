@@ -81,6 +81,7 @@ void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window){
                 fireQueue.push({nx, ny});
             }
         }
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
     }
 
@@ -143,7 +144,6 @@ int main()
             window.clear();
             drawGrid(window, grid);
             window.display();
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
             grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[1]);
         }
 
