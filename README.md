@@ -1,4 +1,4 @@
-The main branch was originally built using a custom MakeFile that probably only works on my local machine. Please clone the cmake branch for better compatibility.
+The main branch was originally built using a custom MakeFile that probably only works on my local machine. Please clone the cmake branch for better compatibility. I have learned my lesson to not let AI hold my hand through configuration.
 
 # Forest Fire Model Visualization
 A visualization of the [self-organized criticality forest fire model](https://en.wikipedia.org/wiki/Forest-fire_model) using SFML graphics in C++
