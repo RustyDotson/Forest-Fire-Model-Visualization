@@ -1,0 +1,3 @@
+/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/vorbis-subbuild/CMakeFiles/vorbis-populate.dir
+/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/vorbis-subbuild/CMakeFiles/edit_cache.dir
+/Users/rustydotson/Projects/CPP/beginnerApp/Forest-Fire-Model-Visualization/build/_deps/vorbis-subbuild/CMakeFiles/rebuild_cache.dir
