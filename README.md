@@ -3,6 +3,8 @@ The main branch is currently being built using a custom MakeFile that works on m
 # Forest Fire Model Visualization
 A visualization of the [self-organized criticality forest fire model](https://en.wikipedia.org/wiki/Forest-fire_model) using SFML graphics in C++
 
+Before building, Linux users may need to install a few things according to [SFML's website](https://www.sfml-dev.org/tutorials/3.0/getting-started/cmake/#requirements)
+
 Build the program by running:
 
 cmake -B build
