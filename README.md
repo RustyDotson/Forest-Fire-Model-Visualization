@@ -1,13 +1,15 @@
+The main branch is currently being built using a custom MakeFile that works on my local machine. Please clone the cmake branch for better compatibility.
+
 # Forest Fire Model Visualization
 A visualization of the [self-organized criticality forest fire model](https://en.wikipedia.org/wiki/Forest-fire_model) using SFML graphics in C++
 
+The project was originally built using MacOS without using cmake, instead through making a custom MakeFile. Getting the main branch to work currenly on Windows or Linux will be annoying. AI is good for learning but often walks you through really bad ways of doing things :/. You can see how the cmake files were made by reading [this page](https://www.sfml-dev.org/tutorials/3.0/getting-started/cmake/#requirements) on SFML's website. Linux users may need to install a few extra things according to the page.
 
-The project was built using MacOS, so getting the code to work on Windows or Linux may be difficult. The Makefile in this project was designed for a Mac, so changes will need to be made depending on what os you are using. Windows will not be able to run make files by default. Please look into GNUWin32 or other packages in order to run on Windows. SFML's website: https://www.sfml-dev.org/. I will work on a cmake version of this to make it easier to run.
+building the program by running:
 
-after getting the MakeFile setup correctly with your os building is as simple as:
+cmake -B build
+cmake --build build
 
- make
-
- ./main
+should get you something like this (unless I changed the default number of units or colors later):
  
 ![ffm2](https://github.com/user-attachments/assets/511695b5-9957-4631-8775-87909edce27b)
