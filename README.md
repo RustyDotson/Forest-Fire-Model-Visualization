@@ -11,6 +11,7 @@ cmake branch will be merged over to the main branch after it is confirmed the cm
 To get the program running, just build by doing:
 
 cmake -B build
+
 cmake --build build
 
 After, you should get something like this (unless I changed the default colors or number of units):
