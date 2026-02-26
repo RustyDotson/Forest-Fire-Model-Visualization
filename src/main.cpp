@@ -16,7 +16,7 @@ and [2] == the color for fire.
 */
 vector<sf::Color> colors = {sf::Color::Green, sf::Color::Black, sf::Color::Red, sf::Color::Yellow};
 
-void drawGrid(sf::RenderWindow& window, Grid grid){
+void drawGrid(sf::RenderWindow& window, Grid& grid){
     /*
     draws the entire grid to sfml graphics. 
     NOTICE: this does not automatically update the window. 
@@ -36,7 +36,7 @@ void drawGrid(sf::RenderWindow& window, Grid grid){
     }
 }
 
-void drawUnit(sf::RenderWindow& window, Grid grid, int x, int y){
+void drawUnit(sf::RenderWindow& window, Grid& grid, int x, int y){
     //redraws unit at grid coordinates x, y.
     window.draw(grid.unitMatrix[x][y].unitShape);
 }
@@ -81,7 +81,7 @@ void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window){
                 fireQueue.push({nx, ny});
             }
         }
-        std::this_thread::sleep_for(std::chrono::milliseconds(10));
+        std::this_thread::sleep_for(std::chrono::milliseconds(5));
 
     }
 
@@ -141,9 +141,9 @@ int main()
                 burnTrees(grid, locationx, locationy, window);
             }
             grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[2]);
-            window.clear();
-            drawGrid(window, grid);
-            window.display();
+            //window.clear();
+            //drawGrid(window, grid);
+            //window.display();
             grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[1]);
         }
 
@@ -151,6 +151,7 @@ int main()
         locationy = (rand() % grid.unitMatrix[0].size());
         
         std::cout << locationx << ", " << locationy << std::endl;
+        //std::this_thread::sleep_for(std::chrono::milliseconds(10));
 
         while (const std::optional event = window.pollEvent())
         {
