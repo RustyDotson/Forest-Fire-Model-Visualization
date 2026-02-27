@@ -28,12 +28,3 @@ int Grid::getWidth(){
     return unitMatrix[0].size();
 }
 
-
-//Below is a testable main function that can be used to test just the grid class.
-
-/*int main(){
-    Unit test(0, 0, 0);
-    Grid testGrid(10, 10);
-    cout << test.getLocation()[0] << endl;
-    return 0;
-}*/
