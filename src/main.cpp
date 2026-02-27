@@ -74,10 +74,10 @@ void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window){
             nx = dx[i] + fireUnitX;
             ny = dy[i] + fireUnitY;
 
-            if(nx > 0 
-                && nx < grid.unitMatrix.size()-1 
-                && ny > 0 
-                && ny < grid.unitMatrix[0].size()-1){
+            if(nx >= 0 
+                && nx <= grid.unitMatrix.size()-1 
+                && ny >= 0 
+                && ny <= grid.unitMatrix[0].size()-1){
                 fireQueue.push({nx, ny});
             }
         }
