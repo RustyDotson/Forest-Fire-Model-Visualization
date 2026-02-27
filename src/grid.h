@@ -12,6 +12,7 @@ class Grid{
     public:
         vector<vector<Unit>> unitMatrix;
         Grid(int width, int height, vector<sf::Color> colors, int windowSize);
+        ~Grid() = default;
         int getHeight();
         int getWidth();
 

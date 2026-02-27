@@ -19,6 +19,8 @@ class Unit {
 
         Unit(int status, int col, int row, vector<sf::Color> colors, float unitSize);
 
+        ~Unit() = default;
+
         vector<int> getLocation();
 
         void setColor(sf::Color color);
