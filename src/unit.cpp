@@ -33,11 +33,3 @@ vector<int> Unit::getLocation(){
 void Unit::setColor(sf::Color color){
     unitShape.setFillColor(color);
 }
-
-//Below is a testable main function that can be used to test just the unit class.
-
-/*int main(){
-    Unit test(0, 0, 0);
-    cout << test.getLocation()[0] << endl;
-    return 0;
-}*/
