@@ -11,6 +11,8 @@ cmake -B build
 
 cmake --build build
 
+You will find the executable file in the subfolder "build/bin/"
+
 After you should get something like this (unless I changed the default number of units or colors later):
  
 ![ffm2](https://github.com/user-attachments/assets/511695b5-9957-4631-8775-87909edce27b)
