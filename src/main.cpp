@@ -86,7 +86,7 @@ void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window, vec
                 fireQueue.push({nx, ny});
             }
         }
-        std::this_thread::sleep_for(std::chrono::milliseconds(5));
+        std::this_thread::sleep_for(std::chrono::milliseconds(10));
 
     }
 
