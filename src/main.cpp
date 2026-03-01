@@ -1,9 +1,12 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include "grid.h"
 #include <ctime>
 #include <queue>
 #include <thread>
 #include <chrono>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 
@@ -41,7 +44,7 @@ void drawUnit(sf::RenderWindow& window, Grid& grid, int x, int y){
     window.draw(grid.unitMatrix[x][y].unitShape);
 }
 
-void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window){
+void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window, vector<sf::SoundBuffer> &treeBurnBuffers, sf::Sound &sound){
     //performs the breadth-first search burning function on the grid.
     std::queue<std::pair<int, int>> fireQueue;
     std::queue<std::pair<int, int>> colorEffectQueue;
@@ -61,6 +64,8 @@ void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window){
         colorEffectQueue.push({fireUnitX, fireUnitY});
 
         drawUnit(window, grid, fireUnitX, fireUnitY);
+        sound = sf::Sound(treeBurnBuffers[rand() % treeBurnBuffers.size()]);
+        sound.play();
         window.display();
 
         //coordinates for all of the surrounding units
@@ -94,6 +99,36 @@ void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window){
 
 }
 
+vector<sf::SoundBuffer> loadSounds(string type){
+    vector<sf::SoundBuffer> soundBuffers;
+    sf::SoundBuffer buffer;
+
+    if (type == "tree_spawn"){
+        int sound_count = 3;
+        for (int i = 1; i <= sound_count; i++){
+            string filePath = "sounds/tree_spawn" + to_string(i) + ".ogg";
+            if (!buffer.loadFromFile(filePath)){
+                std::cerr << "Error loading " << filePath << std::endl;
+            }
+            soundBuffers.push_back(buffer);
+        }
+    }
+
+    if (type == "tree_burn"){
+        int sound_count = 3;
+        for (int i = 1; i <= sound_count; i++){
+            string filePath = "sounds/tree_burn" + to_string(i) + ".ogg";
+            
+            if (!buffer.loadFromFile(filePath)){
+                std::cerr << "Error loading " << filePath << std::endl;
+            }
+            soundBuffers.push_back(buffer);
+        }
+    }
+
+    return soundBuffers;
+}
+
 
 int main()
 {   
@@ -102,12 +137,17 @@ int main()
     unsigned int windowSize = 800;
     sf::RenderWindow window(sf::VideoMode({windowSize, windowSize}), "Forest Fire Visual Model");
 
+    vector<sf::SoundBuffer> treeSpawnBuffers = loadSounds("tree_spawn");
+    vector<sf::SoundBuffer> treeBurnBuffers = loadSounds("tree_burn");
+    sf::Sound sound(treeSpawnBuffers[0]);
+    
+
     //gridSize determines the width and height of the grid.
     int gridSize = 100;
     Grid grid(gridSize, gridSize, colors, windowSize);
 
-    int locationx = (rand() % grid.unitMatrix.size());
-    int locationy = (rand() % grid.unitMatrix[0].size());
+    int locationy = (rand() % grid.getHeight());
+    int locationx = (rand() % grid.getWidth());
 
     //two random rolls for tree and lightning spawn (a random number between 1 and 100)
     int treeSpawnRoll = (rand() % 100);
@@ -127,8 +167,9 @@ int main()
                 locationx = (rand() % grid.unitMatrix.size());
                 locationy = (rand() % grid.unitMatrix[0].size());
             }
-            
             grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[0]);
+            sound = sf::Sound(treeSpawnBuffers[rand() % treeSpawnBuffers.size()]);
+            sound.play();
             window.clear();
             drawGrid(window, grid);
             window.display();
@@ -138,7 +179,7 @@ int main()
             locationx = (rand() % grid.unitMatrix.size());
             locationy = (rand() % grid.unitMatrix[0].size());
             if (grid.unitMatrix[locationx][locationy].unitShape.getFillColor() == colors[0]){
-                burnTrees(grid, locationx, locationy, window);
+                burnTrees(grid, locationx, locationy, window, treeBurnBuffers, sound);
             }
             grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[2]);
             //window.clear();
@@ -146,6 +187,8 @@ int main()
             //window.display();
             grid.unitMatrix[locationx][locationy].unitShape.setFillColor(colors[1]);
         }
+
+        
 
         locationx = (rand() % grid.unitMatrix.size());
         locationy = (rand() % grid.unitMatrix[0].size());
