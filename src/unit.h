@@ -1,7 +1,5 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
-#include <iostream>
-using std::vector;
 
 class Unit {
     private:
@@ -17,11 +15,11 @@ class Unit {
         //use below line if you want a circle:
         //sf::CircleShape unitShape;
 
-        Unit(int status, int col, int row, vector<sf::Color> colors, float unitSize);
+        Unit(int status, int col, int row, std::vector<sf::Color> colors, float unitSize);
 
         ~Unit() = default;
 
-        vector<int> getLocation();
+        std::vector<int> getLocation();
 
         void setColor(sf::Color color);
 

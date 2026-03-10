@@ -1,18 +1,18 @@
 #include "grid.h"
 #include <iostream>
-using std::cout, std::endl;
+#include <vector>
 
 
-Grid::Grid(int width, int height, vector<sf::Color> colors, int windowSize){
+Grid::Grid(int width, int height, std::vector<sf::Color> colors, int windowSize){
     unitMatrix = {};
     buildMatrix(width, height, colors, windowSize);
 }
 
-void Grid::buildMatrix(int width, int height, vector<sf::Color> colors, int windowSize){
-    vector<Unit> row;
+void Grid::buildMatrix(int width, int height, std::vector<sf::Color> colors, int windowSize){
+    std::vector<Unit> row;
     float unitSize = windowSize / width;
     for(int wCounter=0; wCounter<width; wCounter++){
-        row = vector<Unit> {};
+        row = std::vector<Unit> {};
         for(int hCounter=0; hCounter<height; hCounter++){
             row.push_back(Unit(0, wCounter, hCounter, colors, unitSize));
         }

@@ -2,10 +2,9 @@
 #include <vector>
 #include <iostream>
 #include "unit.h"
-using std::vector, std::cout, std::endl, std::srand, std::time;
 
 
-Unit::Unit(int status, int col, int row, vector<sf::Color> colors, float unitSize){
+Unit::Unit(int status, int col, int row, std::vector<sf::Color> colors, float unitSize){
     //below line is for square shape:
     //unitShape.setSize(sf::Vector2f(3.f, 3.f));
     unitShape.setSize(sf::Vector2f(unitSize, unitSize));
@@ -21,11 +20,11 @@ Unit::Unit(int status, int col, int row, vector<sf::Color> colors, float unitSiz
     setColor(colors[1]);
 
 
-    cout << "initialized unit for location x(" << col << "), y(" << row << ")." << endl;
+    std::cout << "initialized unit for location x(" << col << "), y(" << row << ")." << std::endl;
 }
 
 
-vector<int> Unit::getLocation(){
+std::vector<int> Unit::getLocation(){
     return {unitColumn, unitRow};
 }
 

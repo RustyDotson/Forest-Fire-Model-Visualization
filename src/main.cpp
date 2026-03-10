@@ -7,7 +7,6 @@
 #include <chrono>
 #include <iostream>
 #include <vector>
-using namespace std;
 
 
 sf::Color brown(150,75,0);
@@ -17,7 +16,7 @@ colors[0] == a tree,
 [1] == the ground color, 
 and [2] == the color for fire.
 */
-vector<sf::Color> colors = {sf::Color::Green, sf::Color::Black, sf::Color::Red, sf::Color::Yellow};
+std::vector<sf::Color> colors = {sf::Color::Green, sf::Color::Black, sf::Color::Red, sf::Color::Yellow};
 
 void drawGrid(sf::RenderWindow& window, Grid& grid){
     /*
@@ -44,7 +43,7 @@ void drawUnit(sf::RenderWindow& window, Grid& grid, int x, int y){
     window.draw(grid.unitMatrix[x][y].unitShape);
 }
 
-void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window, vector<sf::SoundBuffer> &treeBurnBuffers, sf::Sound &sound){
+void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window, std::vector<sf::SoundBuffer> &treeBurnBuffers, sf::Sound &sound){
     //performs the breadth-first search burning function on the grid.
     std::queue<std::pair<int, int>> fireQueue;
     std::queue<std::pair<int, int>> colorEffectQueue;
@@ -99,14 +98,14 @@ void burnTrees(Grid &grid, int startX, int startY, sf::RenderWindow &window, vec
 
 }
 
-vector<sf::SoundBuffer> loadSounds(string type){
-    vector<sf::SoundBuffer> soundBuffers;
+std::vector<sf::SoundBuffer> loadSounds(std::string type){
+    std::vector<sf::SoundBuffer> soundBuffers;
     sf::SoundBuffer buffer;
 
     if (type == "tree_spawn"){
         int sound_count = 3;
         for (int i = 1; i <= sound_count; i++){
-            string filePath = "sounds/tree_spawn" + to_string(i) + ".ogg";
+            std::string filePath = "sounds/tree_spawn" + std::to_string(i) + ".ogg";
             if (!buffer.loadFromFile(filePath)){
                 std::cerr << "Error loading " << filePath << std::endl;
             }
@@ -117,7 +116,7 @@ vector<sf::SoundBuffer> loadSounds(string type){
     if (type == "tree_burn"){
         int sound_count = 3;
         for (int i = 1; i <= sound_count; i++){
-            string filePath = "sounds/tree_burn" + to_string(i) + ".ogg";
+            std::string filePath = "sounds/tree_burn" + std::to_string(i) + ".ogg";
             
             if (!buffer.loadFromFile(filePath)){
                 std::cerr << "Error loading " << filePath << std::endl;
@@ -137,8 +136,8 @@ int main()
     unsigned int windowSize = 800;
     sf::RenderWindow window(sf::VideoMode({windowSize, windowSize}), "Forest Fire Visual Model");
 
-    vector<sf::SoundBuffer> treeSpawnBuffers = loadSounds("tree_spawn");
-    vector<sf::SoundBuffer> treeBurnBuffers = loadSounds("tree_burn");
+    std::vector<sf::SoundBuffer> treeSpawnBuffers = loadSounds("tree_spawn");
+    std::vector<sf::SoundBuffer> treeBurnBuffers = loadSounds("tree_burn");
     sf::Sound sound(treeSpawnBuffers[0]);
     
 
