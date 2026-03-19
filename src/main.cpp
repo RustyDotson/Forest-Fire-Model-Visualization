@@ -158,6 +158,11 @@ int main()
 
     while (window.isOpen())
     {  
+        while (const std::optional event = window.pollEvent())
+        {
+            if (event->is<sf::Event::Closed>())
+                window.close();
+        }
         treeSpawnRoll = (rand() % 100);
         lightningSpawnRoll = (rand() % 100);
 
@@ -195,11 +200,7 @@ int main()
         std::cout << locationx << ", " << locationy << std::endl;
         //std::this_thread::sleep_for(std::chrono::milliseconds(10));
 
-        while (const std::optional event = window.pollEvent())
-        {
-            if (event->is<sf::Event::Closed>())
-                window.close();
-        }
+        
 
         
     }
